@@ -1,0 +1,7 @@
+include LICENSE README.md PYPI_README.md C_API.md build_cuda.py
+include csrc/rankic.h csrc/python_module.c csrc/rankic_backend.cu
+include csrc/warp_rankic.cuh csrc/scan_rankic.cuh
+exclude test*.py benchmark*.py generate*.py run*.py summarize*.py plot*.py pytest.ini
+exclude IO_TUNING.md LARGE_BENCHMARK.md LONG_DATES.md MULTI_FACTOR.md PIPELINE.md
+exclude QLIB_COMPARISON.md SCALING.md TUNING.md PLAN.md REQUEST.md RELEASE.md
+global-exclude *.pyd *.so *.pyc *.log

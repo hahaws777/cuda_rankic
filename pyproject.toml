@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cuda_rankic"
+version = "0.1.1"
+description = "Memory-budgeted GPU Spearman RankIC with a C ABI and CUDA/CUB kernels"
+readme = "PYPI_README.md"
+requires-python = ">=3.10"
+license = "MIT"
+license-files = ["LICENSE"]
+dependencies = ["torch>=2.8", "numpy>=1.24"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: C",
+    "Programming Language :: C++",
+    "Topic :: Scientific/Engineering :: Mathematics",
+]
+
+[project.urls]
+Homepage = "https://github.com/hahaws777/cuda_rankic"
+Repository = "https://github.com/hahaws777/cuda_rankic"
+Issues = "https://github.com/hahaws777/cuda_rankic/issues"
+
+[project.optional-dependencies]
+release = ["build", "twine"]
+
+[tool.setuptools]
+packages = ["cuda_rankic"]
